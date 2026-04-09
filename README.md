@@ -2,6 +2,9 @@
 
 A chat-based interview practice application built entirely on Cloudflare. The frontend is hosted on Cloudflare Pages, the backend API runs on Cloudflare Workers, Workers AI powers interview question generation and answer evaluation, and Durable Objects provide per-session memory and state. The Worker coordinates user intent routing so the app can generate questions, provide hints, evaluate answers, and summarize progress.
 
+## Live Demo
+https://ai-interview-coach-3e2.pages.dev
+
 ## Architecture
 
 ```
