@@ -1,0 +1,28 @@
+{
+  "name": "ai-interview-coach",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-04-09",
+
+  // Workers AI binding
+  "ai": {
+    "binding": "AI"
+  },
+
+  // Durable Objects bindings
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "INTERVIEW_SESSIONS",
+        "class_name": "InterviewSession"
+      }
+    ]
+  },
+
+  // Migration for Durable Objects
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["InterviewSession"]
+    }
+  ]
+}
